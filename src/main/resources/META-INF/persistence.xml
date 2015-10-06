@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="persist">
+	<jta-data-source>java:/transport</jta-data-source>
+		<class>tn.mario.moovtn.entities.Claims</class>
+		<class>tn.mario.moovtn.entities.Line</class>
+		<class>tn.mario.moovtn.entities.Location</class>
+		<class>tn.mario.moovtn.entities.Notification</class>
+		<class>tn.mario.moovtn.entities.Rent</class>
+		<class>tn.mario.moovtn.entities.Station</class>
+		<class>tn.mario.moovtn.entities.Student</class>
+		<class>tn.mario.moovtn.entities.Subscriber</class>
+		<class>tn.mario.moovtn.entities.TransportMean</class>
+		<class>tn.mario.moovtn.entities.Trip</class>
+		<class>tn.mario.moovtn.entities.Users</class>
+	<properties>
+			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+			<property name="hibernate.show_sql" value="true"/>
+			<property name="hibernate.format_sql" value="true"/>
+		</properties>
+	</persistence-unit>
+</persistence>
