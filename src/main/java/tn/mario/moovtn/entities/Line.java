@@ -19,7 +19,7 @@ public class Line implements Serializable {
 	
 	private Integer id;
 	private String name;
-	private Set<Notification> notifications;
+	 private Set<Notification> notifications;
 	@OneToMany(mappedBy="line")
 	public Set<Notification> getNotifications() {
 		return notifications;
