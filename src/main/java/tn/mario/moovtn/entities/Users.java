@@ -35,7 +35,7 @@ import javax.persistence.Table;
 		
 	//	private List<SubscriptionCard> subscriptionCards;
 		
-		//private List<Claims> claims;
+		private List<Claims> claims;
 		
 		@Id
 		@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -86,6 +86,13 @@ import javax.persistence.Table;
 		}
 		public void setLines(List<Line> lines) {
 			this.lines = lines;
+		}
+		@OneToMany(mappedBy="users")
+		public List<Claims> getClaims() {
+			return claims;
+		}
+		public void setClaims(List<Claims> claims) {
+			this.claims = claims;
 		}
 		
 	}
