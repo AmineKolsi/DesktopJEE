@@ -10,6 +10,7 @@
 		<class>tn.mario.moovtn.entities.Station</class>
 		<class>tn.mario.moovtn.entities.Student</class>
 		<class>tn.mario.moovtn.entities.Subscriber</class>
+		<class>tn.mario.moovtn.entities.SubscriptionCard</class>
 		<class>tn.mario.moovtn.entities.TransportMean</class>
 		<class>tn.mario.moovtn.entities.Trip</class>
 		<class>tn.mario.moovtn.entities.Users</class>

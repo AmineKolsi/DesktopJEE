@@ -33,7 +33,7 @@ import javax.persistence.Table;
 		private String prenom; 
 		private List<Line> lines;
 		
-	//	private List<SubscriptionCard> subscriptionCards;
+		private List<SubscriptionCard> subscriptionCards;
 		
 		private List<Claims> claims;
 		
